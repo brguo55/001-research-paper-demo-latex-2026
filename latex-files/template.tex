@@ -1,0 +1,184 @@
+% =========================
+% Main document class with 11pt font size
+% =========================
+\documentclass[11pt]{article}
+
+% =========================
+% Font and encoding
+% =========================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newpxtext}
+\usepackage{newpxmath}
+\usepackage[scaled=1.03]{inconsolata}
+
+% =========================
+% Math
+% =========================
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% =========================
+% Graphics and color
+% =========================
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+% =========================
+% Tables
+% =========================
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multirow}
+
+% =========================
+% Links
+% =========================
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+% =========================
+% Section formatting
+% =========================
+\usepackage{titlesec}
+
+% =========================
+% Paragraph and spacing
+% =========================
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}
+
+% =========================
+% Numbering depth
+% =========================
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+% =========================
+% Section title style
+% =========================
+\titleformat{\subsection}[block]
+  {\normalfont\large\bfseries}
+  {\thesubsection}
+  {1em}
+  {}
+
+\titleformat{\subsubsection}[block]
+  {\normalfont\normalsize\bfseries}
+  {\thesubsubsection}
+  {1em}
+  {}
+% =========================
+% Spacing for subsection headings and subsubsection headings
+% =========================
+\titlespacing*{\subsection}{0pt}{2.2ex}{0.8ex}
+\titlespacing*{\subsubsection}{0pt}{1.8ex}{0.5ex}
+
+\begin{document}
+\small
+
+\begin{center}
+\Large
+\textbf{Research Paper Demo Title}
+
+\vspace{2em}
+
+\normalsize
+Barney Guo\footnotemark[1]
+
+\vspace{0.1em}
+
+University of North Carolina at Chapel Hill \\
+\end{center}
+
+\vspace{2em}
+
+\noindent\textbf{Abstract:} LaTeX actually has its own built-in \texttt{abstract} format, using the abstract environment, but it is not the style I am using here. The default format usually centers the abstract and places it in the middle of the page. My format is based on what I learned from my professor, Dr. Handy. I place the abstract at the very beginning like Dr. Handy do. Dr. Handy did not bold his abstract heading, so that part is my own stylistic choice, because I wanted to remind myself not to copy his format completely.
+
+\vspace{1em}
+
+\noindent\textbf{Keywords:} The Keywords section lists several terms related to the paper. They are placed here so that others can find the paper more easily and immediately understand its main topic.
+
+\footnotetext[1]{Born in Chengdu, Sichuan, China, 690031}
+
+
+
+
+\newpage
+
+\thispagestyle{empty}
+\vspace*{\fill}
+
+\begin{center}
+\textbf{Acknowledgements}
+\end{center}
+
+\noindent
+The author would especially like to thank Dr. Chris Handy, whose course materials and assignment formatting provided much of the inspiration for the overall look of this template. Although some aspects of the present design differ from the style used in Dr. Handy’s own papers, the author hopes that readers will nevertheless find this template clear, thoughtful, and enjoyable.
+
+
+\vspace*{\fill}
+
+\newpage
+\subsection{Introduction}
+
+This template is intended to provide a simple and flexible starting point for academic writing in LaTeX. It is designed for users who want a clean structure that can be easily modified for different types of papers, including research articles, class assignments, and thesis drafts. It also reflects the author's own preference for keeping writing materials organized and preserving a consistent academic format for future use.
+
+\subsection{Template Overview}
+
+This part of the document provides a brief overview of the structure, design choices, and practical features of the template. It is intended to show how the template may be used as a simple foundation for academic writing, while also illustrating some of the stylistic preferences that shaped its development.
+
+\subsubsection{Font}
+
+This template is based on an 11pt Palatino font setting. Although LaTeX provides many default formatting options, writers often adapt them to better reflect their own preferences. In this sense, a template serves not only as a technical tool, but also as a reflection of the writer's academic habits and stylistic choices.
+
+For the most consistent appearance, pdfLaTeX is recommended for compilation. The author compiles this template in an application called Texifier using TexpadTeX. Using a different engine may result in slight differences in the rendered font.
+
+\subsubsection{Headings}
+
+This template uses \texttt{subsection} as the highest level of heading rather than \texttt{section}, and limits the structure to \texttt{subsection} and \texttt{subsubsection} only. This choice helps produce a simpler and cleaner appearance throughout the document. To support this structure, the spacing of \texttt{subsection} headings has been adjusted so that they carry greater visual weight and serve more effectively as the main organizational units of the paper.
+
+\subsubsection{Example Table}
+
+Tables are useful for presenting structured information in a concise and organized way. In academic writing, they allow readers to identify important components more quickly and clearly. The following table provides a simple example of how tabular material may be incorporated into this template.
+
+\begin{table}[h]
+\centering
+\caption{Example Components in This Template}
+\begin{tabular}{ll}
+\hline
+Component & Description \\
+\hline
+Title & Displays the name of the paper \\
+Abstract & Summarizes the main content briefly \\
+Keywords & Highlights important topics of the paper \\
+Sections & Organize the body of the document \\
+Table & Presents structured information clearly \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Example Formula}
+
+LaTeX is especially well known for its ability to present mathematical expressions in a clear and elegant form. Even simple equations can be displayed neatly within the structure of a document. For illustration, the following formula presents a basic linear relationship:
+
+\begin{equation}
+y = mx + b
+\end{equation}
+
+In this example, \(m\) represents the slope, and \(b\) represents the intercept. This demonstrates how mathematical notation can be incorporated smoothly into the template.
+
+\subsection{About the Author}
+
+The author is interested in academic writing, research presentation, and document design. Outside of formal work, he enjoys Chinese food and reading comics. He also has a particular interest in exploring LaTeX formatting, especially the ways in which small design choices can influence the structure and visual style of a document. For him, building a template is not only a technical exercise, but also a way of thinking more carefully about academic style and personal preference.
+
+\subsection{Conclusion}
+
+In the end, this template is meant to serve as a simple and flexible example of academic writing in LaTeX. It reflects not only practical formatting choices, but also some of the author's own habits and preferences in organizing written work. While modest in scope, the template illustrates how even small design decisions can contribute to the overall tone and clarity of a document.
+
+\end{document}

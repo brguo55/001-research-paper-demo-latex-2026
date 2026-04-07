@@ -1,0 +1,153 @@
+% =========================
+% Main document class with 11pt font size
+% =========================
+\documentclass[11pt]{article}
+
+% =========================
+% Font and encoding
+% =========================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newpxtext}
+\usepackage{newpxmath}
+\usepackage[scaled=1.03]{inconsolata}
+
+% =========================
+% Math
+% =========================
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% =========================
+% Graphics and color
+% =========================
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+% =========================
+% Tables
+% =========================
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multirow}
+
+% =========================
+% Links
+% =========================
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+% =========================
+% Section formatting
+% =========================
+\usepackage{titlesec}
+
+% =========================
+% Paragraph and spacing
+% =========================
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}
+
+% =========================
+% Numbering depth
+% =========================
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+% =========================
+% Section title style
+% =========================
+\titleformat{\subsection}[block]
+  {\normalfont\large\bfseries}
+  {\thesubsection}
+  {1em}
+  {}
+
+\titleformat{\subsubsection}[block]
+  {\normalfont\normalsize\bfseries}
+  {\thesubsubsection}
+  {1em}
+  {}
+% =========================
+% Spacing for subsection headings and subsubsection headings
+% =========================
+\titlespacing*{\subsection}{0pt}{2.2ex}{0.8ex}
+\titlespacing*{\subsubsection}{0pt}{1.8ex}{0.5ex}
+
+\begin{document}
+\small
+
+\begin{center}
+\Large
+\textbf{Research Paper Demo Title}
+
+\vspace{2em}
+
+\normalsize
+John Doe\footnotemark[1]
+
+\vspace{0.1em}
+
+University \\
+\end{center}
+
+\vspace{2em}
+
+\noindent\textbf{Abstract:} 
+
+\vspace{1em}
+
+\noindent\textbf{Keywords:}
+
+\footnotetext[1]{xxx}
+
+
+
+
+\newpage
+
+\thispagestyle{empty}
+\vspace*{\fill}
+
+\begin{center}
+\textbf{Acknowledgements}
+\end{center}
+
+\noindent
+xxxxx
+
+
+\vspace*{\fill}
+
+\newpage
+\subsection{Introduction}
+
+xxxxx
+
+\subsection{Template Overview}
+
+xxxxx
+
+\subsubsection{Font}
+
+xxxxx
+
+\subsubsection{Headings}
+
+xxxxx
+
+
+\subsection{About the Author}
+
+xxxxx
+
+\subsection{Conclusion}
+
+xxxxx
+
+\end{document}
